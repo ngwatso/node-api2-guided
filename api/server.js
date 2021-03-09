@@ -10,9 +10,6 @@ server.use(express.json());
 
 server.use('/api/adopters', adoptersRouter);
 
-const Dog = require('./dogs/dogs-model');
-
-
 
 // OTHER ENDPOINTS
 // OTHER ENDPOINTS
