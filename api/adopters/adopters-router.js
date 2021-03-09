@@ -10,6 +10,7 @@ const Adopter = require('./adopters-model');
 router.get('/', (req, res) => {
   Adopter.find(req.query)
     .then(adopters => {
+      throw new Error('arghhhhh')
       res.status(200).json(adopters);
     })
     .catch(error => {
