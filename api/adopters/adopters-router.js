@@ -1,6 +1,6 @@
 const express = require('express');
 
-const router = express.Router()
+const router = express.Router();
 
 const Adopter = require('./adopters-model');
 
@@ -101,3 +101,5 @@ router.put('/api/adopters/:id', (req, res) => {
       });
     });
 });
+
+module.exports = router
