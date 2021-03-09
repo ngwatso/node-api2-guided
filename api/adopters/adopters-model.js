@@ -15,12 +15,10 @@ function find(query) {
   const { page = 1, limit = 2, sortby = 'id', sortdir = 'asc' } = query;
   const offset = limit * (page - 1);
 
-  const rows = db('adopters')
+  return db('adopters') // knex js libr sql
     .orderBy(sortby, sortdir)
     .limit(limit)
     .offset(offset);
-
-  return rows;
 }
 
 function findById(id) {
