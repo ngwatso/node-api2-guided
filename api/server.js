@@ -10,7 +10,6 @@ server.use(express.json());
 
 server.use('/api/adopters', adoptersRouter);
 
-
 // OTHER ENDPOINTS
 // OTHER ENDPOINTS
 // OTHER ENDPOINTS
