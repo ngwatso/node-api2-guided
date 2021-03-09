@@ -7,7 +7,7 @@ const Adopter = require('./adopters-model');
 // ADOPTERS ENDPOINTS
 // ADOPTERS ENDPOINTS
 // ADOPTERS ENDPOINTS
-router.get('/api/adopters', (req, res) => {
+router.get('/', (req, res) => {
   Adopter.find(req.query)
     .then(adopters => {
       res.status(200).json(adopters);
