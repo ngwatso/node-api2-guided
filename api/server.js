@@ -2,13 +2,16 @@
 // BREAK UP THIS MONOLITHIC FILE USING ROUTES
 // BREAK UP THIS MONOLITHIC FILE USING ROUTES
 const express = require('express');
+
 const adoptersRouter = require('./adopters/adopters-router.js');
-const dogsRouter = require('./')
+const dogsRouter = require('./dogs/dogs-router');
+
 const server = express();
 
 server.use(express.json());
 
 server.use('/api/adopters', adoptersRouter);
+server.use('/api/dogs', )
 
 // OTHER ENDPOINTS
 // OTHER ENDPOINTS
