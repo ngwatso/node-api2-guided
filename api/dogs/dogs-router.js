@@ -2,9 +2,9 @@ const router = require('express').Router();
 
 const Dog = require('./dogs-model');
 
-// * DOGS ENDPOINTS
-// * DOGS ENDPOINTS
-// * DOGS ENDPOINTS
+// ** DOGS ENDPOINTS
+// ** DOGS ENDPOINTS
+// ** DOGS ENDPOINTS
 
 router.get('/', (req, res) => {
 	Dog.find()

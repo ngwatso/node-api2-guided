@@ -3,9 +3,9 @@ const router = express.Router();
 
 const Adopter = require('./adopters-model');
 
-// * ADOPTERS ENDPOINTS
-// * ADOPTERS ENDPOINTS
-// * ADOPTERS ENDPOINTS
+// ** ADOPTERS ENDPOINTS
+// ** ADOPTERS ENDPOINTS
+// ** ADOPTERS ENDPOINTS
 
 router.get('/', (req, res) => {
 	Adopter.find(req.query)
